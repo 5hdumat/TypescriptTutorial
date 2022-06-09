@@ -1,0 +1,30 @@
+// 파라미터의 타입을 정의하는 방식
+// function sum(a: number, b: number) {
+//     return a + b;
+// }
+
+sum(10, 20);
+
+// 함수의 반환 값에 타입을 정의하는 방식
+function add(): number {
+    return 10;
+}
+
+// 함수에 타입을 정의하는 방식
+function sum(a: number, b: number): number {
+    return a + b;
+}
+
+// 파라미터 제한 (ts가 함수의 스펙을 정확하게 인지한 후 컴파일 에러 발생)
+// sum(10, 20, 30); // 인자 많음
+// sum(10); // 인자 적음
+
+sum(10, 20)
+
+// 함수의 Optional Parameter
+function log(a: string, b?: string) {
+
+}
+
+log('hello ts')
+log('hello ts', 'abc')
